@@ -1,0 +1,14 @@
+
+      #hide-listings,
+      #show-listings {
+        width: 150px;
+      }
+      #map {
+        bottom:0px;
+        height: 91%;
+        left: 0px;
+        position: absolute;
+        right: 0px;
+        top: 60px;
+        z-index: -1;
+      }
