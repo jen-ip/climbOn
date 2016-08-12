@@ -145,30 +145,33 @@
         // Constructor creates a new map - only center and zoom are required.
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 40.7413549, lng: -73.9980244},
-          zoom: 13,
+          zoom: 12,
           styles: styles,
           mapTypeControl: false
         });
 
      
       var locations = [
-      	{title: 'The Cliffs at LIC', location: {lat: 40.7486493, lng: -73.9509215}},
-      	{title: 'The Sports Center at Chelsea Piers', location: {lat: 40.7464777, lng: -74.0106802}},
-      	{title: 'Brooklyn Boulders', location: {lat: 40.679661, lng: -73.9864287}},
-      	{title: 'Brooklyn Boulders Queensbridge', location: {lat: 40.7526872, lng: -73.9425536}},
-      	{title: 'DUMBO Boulders', location: {lat: 40.704272, lng: -73.9914239}},
-      	{title: 'The Climbing Gym at Manhattan Plaza Health Club', location: {lat: 40.7598933, lng: -73.99674}},
-      	{title: 'Steep Rock Bouldering', location: {lat: 40.7867848, lng: -73.9528596}},
-      	{title: 'Everyday Athlete', location: {lat: 40.6925522, lng: -73.9956783}}
+      	{title: '<a href="http://lic.thecliffsclimbing.com/">The Cliffs at LIC</a> <br/> <i>Bouldering, Top Rope</i>', location: {lat: 40.7486493, lng: -73.9509215}},
+      	{title: '<a href="https://www.chelseapiers.com/gym/rock-climbing/overview/">The Sports Center at Chelsea Piers</a> <br/> <i>Bouldering, Top Rope</i>', location: {lat: 40.7464777, lng: -74.0106802}},
+      	{title: '<a href="http://brooklynboulders.com/brooklyn/">Brooklyn Boulders</a> <br/> <i>Bouldering, Top Rope</i>', location: {lat: 40.679661, lng: -73.9864287}},
+      	{title: '<a href="http://brooklynboulders.com/queensbridge/">Brooklyn Boulders Queensbridge</a> <br/> <i>Bouldering, Top Rope</i>', location: {lat: 40.7526872, lng: -73.9425536}},
+      	{title: '<a href="http://dumbo.thecliffsclimbing.com/">DUMBO Boulders</a> <br/> <i>Bouldering Only, Outdoors</i>', location: {lat: 40.704272, lng: -73.9914239}},
+      	{title: '<a href="http://mphc.com/climbinggym/">The Climbing Gym at Manhattan Plaza Health Club</a> <br/> <i>Bouldering, Top Rope</i>', location: {lat: 40.7598933, lng: -73.99674}},
+      	{title: '<a href="http://www.srbnyc.com/">Steep Rock Bouldering</a> <br/> <i>Bouldering Only</i>', location: {lat: 40.7867848, lng: -73.9528596}},
+      	{title: '<a href="http://everydayathlete.com/">Everyday Athlete</a> <br/> <i>Bouldering Only</i>', location: {lat: 40.6925522, lng: -73.9956783}}
 
       ];
 
         largeInfowindow = new google.maps.InfoWindow();
+        var bounds = new google.maps.LatLngBounds();
+
 
         // Style the marker a bit. This will be our listing marker.
         defaultIcon = makeMarkerIcon('21bcb0');
         // Create a "highlighted location" marker color for when user mouses over marker.
         var highlightedIcon = makeMarkerIcon('e7ff43');
+        var bounds = new google.maps.LatLngBounds();
 
         // The following group uses the location array to create an array of markers on initialize.
         for (var i = 0; i < locations.length; i++) {
@@ -178,6 +181,7 @@
           // Create a marker per location, and put into markers array.
            var marker = new google.maps.Marker({
             position: position,
+            map: map,
             title: title,
             animation: google.maps.Animation.DROP,
             icon: defaultIcon,
@@ -211,10 +215,7 @@
            isActive = true;
           });
         }
-        document.getElementById('show-listings').addEventListener('click', showListings);
-        document.getElementById('hide-listings').addEventListener('click', hideListings);
-      }
-
+ }
       function resetMarkers( ){
       	console.warn("resetMarkers()")
 
@@ -248,22 +249,7 @@
           });
         }
       }
-      // This function will loop through the markers array and display them all.
-      function showListings() {
-        var bounds = new google.maps.LatLngBounds();
-        // Extend the boundaries of the map for each marker and display the marker
-        for (var i = 0; i < markers.length; i++) {
-          markers[i].setMap(map);
-          bounds.extend(markers[i].position);
-        }
-        map.fitBounds(bounds);
-      }
-      // This function will loop through the listings and hide them all.
-      function hideListings() {
-        for (var i = 0; i < markers.length; i++) {
-          markers[i].setMap(null);
-        }
-      }
+      
       // This function takes in a COLOR, and then creates a new marker icon of that color.
       // The icon will be 21 px wide by 34 high, have an origin of 0, 0 and be anchored at 10, 34).
       function makeMarkerIcon(markerColor) {
