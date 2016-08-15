@@ -258,12 +258,24 @@ input.gn-search:focus {
 		content: "\e00d"
 }
 
+.gn-icon-map::before {
+		content: "\f041"
+}
+.gn-icon-calender::before {
+		content: "\f073"
+}
+
 .gn-icon-article::before {
 		content: "\e003"
 }
 
 .gn-icon-pictures::before {
 		content: "\e008"
+}
+
+.gn-icon-chat::before {
+		content: "\e00f"
+
 }
 
 .gn-icon-videos::before {
