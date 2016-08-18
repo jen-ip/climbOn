@@ -152,14 +152,14 @@
 
      
       var locations = [
-      	{title: '<a href="http://lic.thecliffsclimbing.com/">The Cliffs at LIC</a> <br/> <i>Bouldering, Top Rope</i>', location: {lat: 40.7486493, lng: -73.9509215}},
-      	{title: '<a href="https://www.chelseapiers.com/gym/rock-climbing/overview/">The Sports Center at Chelsea Piers</a> <br/> <i>Bouldering, Top Rope</i>', location: {lat: 40.7464777, lng: -74.0106802}},
-      	{title: '<a href="http://brooklynboulders.com/brooklyn/">Brooklyn Boulders</a> <br/> <i>Bouldering, Top Rope</i>', location: {lat: 40.679661, lng: -73.9864287}},
-      	{title: '<a href="http://brooklynboulders.com/queensbridge/">Brooklyn Boulders Queensbridge</a> <br/> <i>Bouldering, Top Rope</i>', location: {lat: 40.7526872, lng: -73.9425536}},
-      	{title: '<a href="http://dumbo.thecliffsclimbing.com/">DUMBO Boulders</a> <br/> <i>Bouldering Only, Outdoors</i>', location: {lat: 40.704272, lng: -73.9914239}},
-      	{title: '<a href="http://mphc.com/climbinggym/">The Climbing Gym at Manhattan Plaza Health Club</a> <br/> <i>Bouldering, Top Rope</i>', location: {lat: 40.7598933, lng: -73.99674}},
-      	{title: '<a href="http://www.srbnyc.com/">Steep Rock Bouldering</a> <br/> <i>Bouldering Only</i>', location: {lat: 40.7867848, lng: -73.9528596}},
-      	{title: '<a href="http://everydayathlete.com/">Everyday Athlete</a> <br/> <i>Bouldering Only</i>', location: {lat: 40.6925522, lng: -73.9956783}}
+      	{title: '<a href="http://lic.thecliffsclimbing.com/" target="_blank">The Cliffs at LIC</a> <br/> <i>Bouldering, Top Rope</i>', location: {lat: 40.7486493, lng: -73.9509215}},
+      	{title: '<a href="https://www.chelseapiers.com/gym/rock-climbing/overview/" target="_blank">The Sports Center at Chelsea Piers</a> <br/> <i>Bouldering, Top Rope</i>', location: {lat: 40.7464777, lng: -74.0106802}},
+      	{title: '<a href="http://brooklynboulders.com/brooklyn/" target="_blank">Brooklyn Boulders</a> <br/> <i>Bouldering, Top Rope</i>', location: {lat: 40.679661, lng: -73.9864287}},
+      	{title: '<a href="http://brooklynboulders.com/queensbridge/" target="_blank">Brooklyn Boulders Queensbridge</a> <br/> <i>Bouldering, Top Rope</i>', location: {lat: 40.7526872, lng: -73.9425536}},
+      	{title: '<a href="http://dumbo.thecliffsclimbing.com/" target="_blank">DUMBO Boulders</a> <br/> <i>Bouldering Only, Outdoors</i>', location: {lat: 40.704272, lng: -73.9914239}},
+      	{title: '<a href="http://mphc.com/climbinggym/" target="_blank">The Climbing Gym at Manhattan Plaza Health Club</a> <br/> <i>Bouldering, Top Rope</i>', location: {lat: 40.7598933, lng: -73.99674}},
+      	{title: '<a href="http://www.srbnyc.com/" target="_blank">Steep Rock Bouldering</a> <br/> <i>Bouldering Only</i>', location: {lat: 40.7867848, lng: -73.9528596}},
+      	{title: '<a href="http://everydayathlete.com/" target="_blank">Everyday Athlete</a> <br/> <i>Bouldering Only</i>', location: {lat: 40.6925522, lng: -73.9956783}}
 
       ];
 

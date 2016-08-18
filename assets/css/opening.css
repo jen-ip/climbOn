@@ -1,0 +1,88 @@
+
+.theDays { 
+    margin: 20px;
+    padding: 20px;
+    height: 150px;
+    position: relative;
+ }
+
+#dayOne {
+    float: left;
+    background: #e6e6e6;
+    border: 1px solid #c4c4c4;
+    width: 14.25%;
+    height: 100%;
+    padding: 10px;
+    color: #555;
+
+}
+#dayTwo {
+    float: left;
+    background: #e6e6e6;
+    border: 1px solid #c4c4c4;
+    width: 14.25%;
+    height: 100%;
+    padding: 10px;
+    color: #555;
+
+}
+#dayThree {
+    float: left;
+    background: #e6e6e6;
+    border: 1px solid #c4c4c4;
+    width: 14.25%;
+    height: 100%;
+    padding: 10px;
+    color: #555;
+
+}
+#dayFour {
+    float: left;
+    background: #e6e6e6;
+    border: 1px solid #c4c4c4;
+    width: 14.25%;
+    height: 100%;
+    padding: 10px;
+    color: #555;
+
+}
+#dayFive {
+    float: left;
+    background: #e6e6e6;
+    border: 1px solid #c4c4c4;
+    width: 14.25%;
+    height: 100%;
+    padding: 10px;
+    color: #555;
+
+}
+#daySix {
+    float: left;
+    background: #e6e6e6;
+    border: 1px solid #c4c4c4;
+    width: 14.25%;
+    height: 100%;
+    padding: 10px;
+    color: #555;
+
+}
+#daySeven {
+    float: left;
+    background: #e6e6e6;
+    border: 1px solid #c4c4c4;
+    width: 14.25%;
+    height: 100%;
+    padding: 10px;
+    color: #555;
+
+}
+.partners { 
+    margin: 20px;
+    padding: 20px;
+    height: 150px;
+    position: relative;
+ }
+
+ .demo {
+    clear: both;
+ }
