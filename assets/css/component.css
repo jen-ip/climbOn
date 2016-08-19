@@ -6,14 +6,13 @@
 		box-sizing: border-box;
 }
 
-@font-face {
+/*@font-face {
 		font-weight: normal;
 		font-style: normal;
-		font-family: 'ecoicons';
-		src: url("../fonts/ecoicons/ecoicons.eot");
-		src: url("../fonts/ecoicons/ecoicons.eot?#iefix") format("embedded-opentype"), url("../fonts/ecoicons/ecoicons.woff") format("woff"), url("../fonts/ecoicons/ecoicons.ttf") format("truetype"), url("../fonts/ecoicons/ecoicons.svg#ecoicons") format("svg");
-}
-
+		font-family: 'icomoon';
+		src: url("../fonts/iconmoon/fonts/icomoon.eot");
+		src: url("../fonts/iconmoon/fonts/icomoon.woff") format("woff"), url("../fonts/iconmoon/fonts/icomoon.ttf") format("truetype")
+	}*/
 /* Icomoon.com */
 
 .gn-menu-main,
@@ -274,8 +273,7 @@ input.gn-search:focus {
 }
 
 .gn-icon-chat::before {
-		content: "\e00f"
-
+		content: "\e96b"
 }
 
 .gn-icon-videos::before {
@@ -283,7 +281,7 @@ input.gn-search:focus {
 }
 
 .gn-icon-home::before {
-		content: "\e00a"
+		content: "\e021"
 }
 
 .gn-icon-newspaper::before {

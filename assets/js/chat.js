@@ -1,16 +1,17 @@
-$('.chat[data-chat=person2]').addClass('active-chat');
-$('.person[data-chat=person2]').addClass('active');
-
-$('.left .person').mousedown(function(){
-    if ($(this).hasClass('.active')) {
-        return false;
+$(document).ready(function() {
+  $('button').click(function() {
+    var value = $('textarea.message').val();
+    if (value != '') {
+      var message = $('li.message').first().clone();
+      $(message).find('p.text').html(value);
+      $('ul.messages').append(message);
+      $('textarea.message').val('');
+      $('html, body').animate({
+        scrollTop: $(document).height()
+      }, 700);
+      $('textarea.message').removeClass('required');
     } else {
-        var findChat = $(this).attr('data-chat');
-        var personName = $(this).find('.name').text();
-        $('.right .top .name').html(personName);
-        $('.chat').removeClass('active-chat');
-        $('.left .person').removeClass('active');
-        $(this).addClass('active');
-        $('.chat[data-chat = '+findChat+']').addClass('active-chat');
+      $('textarea.message').addClass('required');
     }
+  });
 });
