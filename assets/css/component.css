@@ -6,14 +6,13 @@
 		box-sizing: border-box;
 }
 
-/*@font-face {
+@font-face {
 		font-weight: normal;
 		font-style: normal;
 		font-family: 'icomoon';
 		src: url("../fonts/iconmoon/fonts/icomoon.eot");
 		src: url("../fonts/iconmoon/fonts/icomoon.woff") format("woff"), url("../fonts/iconmoon/fonts/icomoon.ttf") format("truetype")
-	}*/
-/* Icomoon.com */
+	}
 
 .gn-menu-main,
 .gn-menu-main ul {
@@ -281,7 +280,7 @@ input.gn-search:focus {
 }
 
 .gn-icon-home::before {
-		content: "\e021"
+		content: "\e00a"
 }
 
 .gn-icon-newspaper::before {
