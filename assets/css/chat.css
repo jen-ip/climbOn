@@ -1,16 +1,13 @@
 
-
-html {
-  min-height: 100%;
-}
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 14px;
   background: #eaeaea;
   overflow: auto;
-  margin: 0;
+  margin: -50px 0 0 0;
   padding: 0;
+
 /*  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EBE7DE), color-stop(1, #CBC7B7));
 */
 }
@@ -44,35 +41,35 @@ ul li {
 }
 
 .lists {
-    border: solid 1px black;
+    border-right: 3px solid #1abc9c;
     padding: 0;
-
+    margin: 0;
+    width: 30%;
+    height: 100%;
+    float: left;
 }
 .lists ul.list li.message h1.name {
   font-size: 1.2em;
   text-transform: uppercase;
   color: #8b8b8b;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  float: left;
+  margin: 0px;
+  padding: 12px;
+  border-top: 1px solid #8b8b8b;
+  border-bottom: 0 solid #8b8b8b;
 
 }
 
 ul.messages {
   padding: 20px;
-  list-style-type: none;
   margin: 0 0 10px 0;
   width: 70%;
-  float:right;
-  height: 300px;
+  float: right;
+  height: 400px;
   overflow: auto;
-      border: solid 1px black;
 
 }
 ul.messages li.message {
   display: block;
-  clear: both;
   overflow: hidden;
   margin: 0 0 10px 0;
 }
@@ -93,14 +90,14 @@ ul.messages li.message h1.name {
 }
 ul.messages li.message p.text {
   display: block;
-  background-color: rgba(221, 246, 255, 0.6);
+  background-color: rgba(221, 246, 255, 1);
   padding: 10px 20px;
   margin: 0 0 0 35px;
   line-height: 1.4em;
   border-radius: 0px 4px 4px 4px;
 }
 ul.messages li.message p.text:hover {
-  background-color: rgba(221, 246, 255, 0.8);
+  background-color: rgba(221, 246, 255, 1);
 }
 ul.messages li.message:nth-of-type(2n) h1.name {
   text-align: left;
@@ -110,19 +107,18 @@ ul.messages li.message:nth-of-type(2n) img.user {
   margin: 0 0 10px 10px;
 }
 ul.messages li.message:nth-of-type(2n) p.text {
-  background-color: rgba(221, 255, 235, 0.6);
+  background-color: rgba(221, 255, 235, 1);
   margin: 0 35px 0 0;
   border-radius: 4px 0 4px 4px;
 }
 ul.messages li.message:nth-of-type(2n) p.text:hover {
-  background-color: rgba(221, 255, 235, 0.8);
+  background-color: rgba(221, 255, 235, 1);
 
 }
 
 textarea.message {
-  position: relative;
   bottom: 25px;
-  left: 0;
+  right: 0;
   width: 70%;
   border: 0;
   padding: 10px;
@@ -134,6 +130,8 @@ textarea.message {
   border-top: 3px solid #1abc9c;
   background: rgba(255, 255, 255, 1);
   float: right;
+  position: fixed;
+
 
 }
 textarea.message:focus {

@@ -12,11 +12,13 @@
 
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
-    
+
+      <link rel="stylesheet" type="text/css" href="assets/css/jquery.mobile-1.4.5.min.css"/>
+
   <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="assets/css/component.css">
   <link rel="stylesheet" type="text/css" href="assets/css/opening.css"/>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 
 
 
@@ -25,6 +27,8 @@
     <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/Chart.js"></script>
   <script src="assets/js/modernizr.custom.js"></script>
+  <script src="assets/js/jquery.mobile-1.4.5.min.js"></script>
+
 
 
 
@@ -54,29 +58,64 @@
             <ul class="gn-menu">
 
               <li><a href="index.html" class="gn-icon gn-icon-home smoothScroll">Home</a></li>
+              <li><a href="opening.html" class="gn-icon gn-icon-calender smoothScroll">Schedules</a></li>
+              <li><a href="chat.html" class="gn-icon gn-icon-chat smoothScroll">Chats</a></li>
               <li><a href="map.html" class="gn-icon gn-icon-map smoothScroll">Map</a></li>
-              <li><a href="index.html" class="gn-icon gn-icon-calender smoothScroll">My Schedule</a></li>
-              <li><a href="chat.html" class="gn-icon gn-icon-chat smoothScroll">Chat</a></li>
-              <li><a href="index.html" class="gn-icon gn-icon-envelop smoothScroll">Contact</a></li>
+              <li><a href="index.html" class="gn-icon gn-icon-cog smoothScroll">Settings</a></li>
             </ul>
           </div><!-- /gn-scroller -->
         </nav>
       </li>
-      <li><a href="index.html">Climb On!</a></li>
+
+      <li><a href="#">Climb On!</a></li>
+      <li><a href="index.html">Log Out</a></li>
+
     </ul>
   </div>
 
     <!-- Availability -->
-      <div class="theDays"> 
+
+
+
+      <div class="schedule"> 
       <h1> Availability </h1>
-        <div id="dayOne"> </div>
-        <div id="dayTwo"> </div>
-        <div id="dayThree"> </div>
-        <div id="dayFour"> </div>
-        <div id="dayFive"> </div>
-        <div id="daySix"> </div>
-        <div id="daySeven"> </div>
+        <div id="dayOne"> <a href="#" class="lightbox"> Sunday </div>
+        <div id="dayTwo"> <a href="#" class="lightbox"> Monday </div>
+        <div id="dayThree"> <a href="#" class="lightbox"> Tuesday </div>
+        <div id="dayFour"> <a href="#" class="lightbox"> Wednesday </div>
+        <div id="dayFive"> <a href="#" class="lightbox"> Thursday </div>
+        <div id="daySix"> <a href="#" class="lightbox"> Friday </div>
+        <div id="daySeven"> <a href="#" class="lightbox"> Saturday </div>
       </div>
+          <div class="backdrop"></div>
+      <div class="box">
+        <div data-demo-html="true">
+    
+          <div class="close">x</div>
+            <form>
+                <fieldset data-role="controlgroup">
+                  <legend>Monday</legend>
+                  <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2a" value="on" checked="checked">
+                  <label for="radio-choice-v-2a">10 AM - 12 PM</label>
+                  <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2b" value="off">
+                  <label for="radio-choice-v-2b">12 PM - 2 PM</label>
+                  <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2c" value="other">
+                  <label for="radio-choice-v-2c">2 PM - 4 PM</label>
+                  <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2d" value="other">
+                  <label for="radio-choice-v-2c">4 PM - 6 PM</label>
+                  <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2e" value="other">
+                  <label for="radio-choice-v-2c">6 PM - 8 PM</label>
+                  <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2f" value="other">
+                  <label for="radio-choice-v-2c">8 PM - 10 PM</label>
+                  <button id="save"> Save </button>
+              </fieldset>
+           </form>
+        </div> 
+
+    </div>
+
+
+
       <br/>
       <div class="partners">
         <h1> Partners Wanted </h1>
