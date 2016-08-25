@@ -9,7 +9,7 @@
 		font-weight: normal;
 		font-style: normal;
 		font-family: 'ecoicons';
-		src: url("../fonts/ecoicons/ecoicons.eot");
+		/*src: url(../fonts/ecoicons/ecoicons.eot);*/
 		src: url("../fonts/ecoicons/ecoicons.eot?#iefix") format("embedded-opentype"), url("../fonts/ecoicons/ecoicons.woff") format("woff"), url("../fonts/ecoicons/ecoicons.ttf") format("truetype"), url("../fonts/ecoicons/ecoicons.svg#ecoicons") format("svg");
 }
 
@@ -37,6 +37,14 @@
 }
 
 .gn-menu-main a {
+		display: block;
+		height: 100%;
+		color: #ffffff;
+		text-decoration: none;
+		cursor: pointer;
+}
+
+.gn-menu-main ul li a {
 		display: block;
 		height: 100%;
 		color: #ffffff;
@@ -194,7 +202,7 @@ input.gn-search:focus {
 }
 
 .gn-icon-help::before {
-		content: "\e000"
+		content: "\e945"
 }
 
 .gn-icon-earth::before {

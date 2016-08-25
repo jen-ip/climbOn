@@ -1,280 +1,233 @@
-// var d = new Date();
-// var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-// document.getElementById("dayOne").innerHTML = days[d.getDay()];
-
-// var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-// document.getElementById("dayTwo").innerHTML = days[d.getDay() + 1 ];
-
-// var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-// document.getElementById("dayThree").innerHTML = days[d.getDay() + 2 ];
-
-// var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-// document.getElementById("dayFour").innerHTML = days[d.getDay() + 3 ];
-
-// var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-// document.getElementById("dayFive").innerHTML = days[d.getDay() + 4 ];
-
-// var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-// document.getElementById("daySix").innerHTML = days[d.getDay() - 2 ];
-
-// var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-// document.getElementById("daySeven").innerHTML = days[d.getDay() - 1  ];
-
-
-$(document).ready(function(){
- 
-				$('.lightbox').click(function(){
-					console.warn("CLICK")
-					//$('.backdrop, .box').animate({'opacity':'.5'}, 100, 'linear');
-					$('.backdrop').show();
-					$('.box').animate({'opacity':'1.00'}, 100, 'linear');
-					$('.backdrop, .box').css('display', 'block');
-				});
- 
-				$('.close').click(function(){
-					close_box();
-				});
- 
-				$('.backdrop').click(function(){
-					close_box();
-
-				});
-				 $('#configreset').click(function(){
-          			  $('#configform')[0].reset();
- });
-
- 
-			});
- 
-			function close_box()
-			{
-				// $('.backdrop, .box').animate({'opacity':'0'}, 100, 'linear', function(){
-					$('.backdrop, .box').css('display', 'none');
-				// });
-			}
-
-			// function getData(){
-
-			// 	$.get("assets/js/partners.json").done(function(data){
-			// 		console.log( data );
-			// 	})
-			// }
-			var partners =  [
-	{
+[
+  {
+    "_id": "57bcde3ca8ee1011416c5b6d",
     "index": 0,
+    "guid": "9c98c1f4-e4b7-481b-a516-5c22bec62ccb",
     "isActive": true,
-    "style": "Toprope, Lead, Bouldering",
+    "picture": "http://placehold.it/32x32",
     "name": "Soto Gaines",
     "gender": "male",
     "about": "Exercitation laboris esse cupidatat irure. Consectetur enim et veniam laborum dolore commodo velit magna proident proident laboris laborum occaecat ad. Officia et ipsum quis do ex elit commodo cillum nulla.\r\n",
     "favoriteGym": "Brooklyn Boulders Queensbridge"
   },
   {
+    "_id": "57bcde3c6bb0ee14f11ccdc1",
     "index": 1,
+    "guid": "0a1e8902-7dc9-46b9-8a26-4da398855010",
     "isActive": true,
-    "style": "Bouldering",
+    "picture": "http://placehold.it/32x32",
     "name": "Anthony Whitehead",
     "gender": "male",
     "about": "Nostrud elit culpa commodo quis proident consequat proident labore. Laboris deserunt nulla ullamco magna. Aliqua duis dolore minim aute id amet fugiat pariatur amet ipsum.\r\n",
     "favoriteGym": "The Cliffs LIC"
   },
   {
+    "_id": "57bcde3cbed6cba4e05e7347",
     "index": 2,
+    "guid": "5d1cc4a5-43af-488c-bdd8-f3883fc294d0",
     "isActive": true,
-    "style": "Bouldering",
+    "picture": "http://placehold.it/32x32",
     "name": "Santana Watts",
     "gender": "male",
     "about": "Quis minim cillum dolor quis in sint proident adipisicing sunt magna. Eiusmod labore anim labore qui commodo fugiat. Exercitation irure Lorem et voluptate mollit laboris eiusmod magna. Mollit eiusmod pariatur ut qui. Amet qui sunt nostrud laborum minim minim sint reprehenderit dolor consequat elit.\r\n",
     "favoriteGym": "Everyday Athlete"
   },
   {
+    "_id": "57bcde3c80ebab8c163744a4",
     "index": 3,
+    "guid": "d5e27b62-4a49-4b5d-8617-2d46230d15e6",
     "isActive": false,
-    "style": "Toprope, Bouldering",
+    "picture": "http://placehold.it/32x32",
     "name": "Michael Nichols",
     "gender": "female",
     "about": "Veniam nulla elit velit ullamco laboris sunt reprehenderit adipisicing fugiat magna ullamco. Ullamco irure ex occaecat minim officia. Amet elit eiusmod nisi qui. Amet ea sit occaecat cupidatat culpa sunt ex consequat fugiat ipsum excepteur. Voluptate fugiat pariatur elit sunt ut eu occaecat enim velit pariatur deserunt et. Occaecat ullamco officia dolor aute tempor esse irure ad mollit consectetur proident dolor.\r\n",
     "favoriteGym": "Brooklyn Boulders"
   },
   {
+    "_id": "57bcde3cf1710f48cb9bd548",
     "index": 4,
+    "guid": "663102df-bd1a-4a33-87df-8841ceeabadb",
     "isActive": true,
-    "style": "Toprope, Bouldering",
+    "picture": "http://placehold.it/32x32",
     "name": "Tia Webb",
     "gender": "female",
     "about": "Aliqua sit in eiusmod nisi. Do culpa eiusmod sunt Lorem deserunt veniam qui. Irure cillum consequat cupidatat fugiat irure labore aliquip. Veniam laborum sunt dolor tempor ea adipisicing. Et consectetur elit cupidatat veniam Lorem sint et dolore consequat eu fugiat. Esse cupidatat qui et sit cupidatat ea et eiusmod magna tempor adipisicing ad.\r\n",
     "favoriteGym": "The Climbing Gym at Manhattan Plaza Health Club"
   },
   {
+    "_id": "57bcde3cc8eee409f452e75e",
     "index": 5,
+    "guid": "5e7cb1e1-784c-4760-b3c7-51eb1b9723c0",
     "isActive": false,
-    "style": "Toprope, Lead",
+    "picture": "http://placehold.it/32x32",
     "name": "Tracey Thornton",
     "gender": "female",
     "about": "Ut commodo deserunt pariatur labore pariatur ea culpa excepteur. Dolor ut dolor pariatur adipisicing minim fugiat dolore. Elit commodo deserunt amet do irure consectetur adipisicing incididunt esse aliquip dolore aliqua. Veniam ut ad dolore deserunt sint ullamco aliquip amet dolore veniam sint enim. Occaecat incididunt duis velit aliquip laboris sint dolore.\r\n",
     "favoriteGym": "Brooklyn Boulders"
   },
   {
+    "_id": "57bcde3c504cde9220b8f664",
     "index": 6,
+    "guid": "3812aa9e-589f-4113-8ea5-af7bafdc9a02",
     "isActive": true,
-    "style": "Toprope",
+    "picture": "http://placehold.it/32x32",
     "name": "Glenna Waller",
     "gender": "female",
     "about": "Voluptate aliqua reprehenderit voluptate voluptate mollit pariatur qui aliqua. Dolor deserunt fugiat elit dolore enim ullamco. Ea laboris nisi mollit fugiat fugiat quis consequat excepteur nostrud cillum minim duis.\r\n",
     "favoriteGym": "The Sports Center at Chelsea Piers"
   },
   {
+    "_id": "57bcde3cac08242773637bf1",
     "index": 7,
+    "guid": "ee9b9e4d-5b40-4b51-ab20-0ea028674f6d",
     "isActive": false,
-    "style": "Bouldering",
+    "picture": "http://placehold.it/32x32",
     "name": "Mosley Hurley",
     "gender": "male",
     "about": "Veniam consectetur est amet pariatur officia consequat aliquip laboris nulla. Amet quis sint aliquip excepteur voluptate id ex non est et. Ad nisi sunt duis ea.\r\n",
     "favoriteGym": "DUMBO Boulders"
   },
   {
+    "_id": "57bcde3c028287f1f0f55ee7",
     "index": 8,
+    "guid": "a7b913a7-711c-4965-891a-a576f5e0dfc4",
     "isActive": true,
-    "style": "Toprope",
+    "picture": "http://placehold.it/32x32",
     "name": "Lupe Preston",
     "gender": "female",
     "about": "Duis elit culpa quis nostrud veniam velit eu commodo eiusmod non exercitation. Aute non ad deserunt non laboris amet esse anim veniam consequat. Veniam sint sunt minim ea eu adipisicing consequat duis et ea aliquip. Incididunt aute esse laboris ullamco duis anim nostrud incididunt dolore anim occaecat. Consequat amet qui et ea est ex et consequat labore et aliqua officia aute. Ea nisi consequat irure consequat minim deserunt deserunt officia duis amet excepteur cillum.\r\n",
     "favoriteGym": "Brooklyn Boulders"
   },
   {
+    "_id": "57bcde3c76cd19c626410c78",
     "index": 9,
+    "guid": "8f12db4b-5776-411b-b679-fafb20416f6d",
     "isActive": false,
-    "style": "Toprope",
+    "picture": "http://placehold.it/32x32",
     "name": "Pennington Greer",
     "gender": "male",
     "about": "Adipisicing ullamco ea cillum reprehenderit enim amet ipsum fugiat. Pariatur Lorem aute dolor nisi veniam adipisicing veniam. Aliqua do amet non dolore veniam consequat ea ut labore aliquip laboris aliquip proident nisi. Duis officia velit incididunt incididunt eu elit ipsum enim dolor duis commodo.\r\n",
     "favoriteGym": "The Climbing Gym at Manhattan Plaza Health Club"
   },
   {
+    "_id": "57bcde3ce4a11264120a35a1",
     "index": 10,
+    "guid": "46540ec7-8596-49a6-86bd-b1db41afd5a3",
     "isActive": true,
-    "style": "Toprope, Lead, Bouldering",
+    "picture": "http://placehold.it/32x32",
     "name": "Angelita Banks",
     "gender": "female",
     "about": "Non enim minim veniam est aliquip fugiat labore minim nostrud sit qui sit. Et nisi ut dolor proident consectetur culpa do ea ad et nisi. Aute pariatur culpa excepteur incididunt duis culpa fugiat. Aliquip Lorem elit excepteur ad qui non. Excepteur aliqua reprehenderit fugiat cillum ea reprehenderit ipsum eu mollit in ea sint. Nulla sint duis elit culpa consequat eu aliquip sit reprehenderit Lorem. Sunt est exercitation excepteur deserunt sit sint.\r\n",
     "favoriteGym": "The Sports Center at Chelsea Piers"
   },
   {
+    "_id": "57bcde3c67dd48b538d07b20",
     "index": 11,
+    "guid": "ca6b3438-a7d2-4a08-a1bf-9872ad41fbc1",
     "isActive": false,
-    "style": "Toprope, Lead",
+    "picture": "http://placehold.it/32x32",
     "name": "Guthrie Henry",
     "gender": "male",
     "about": "Commodo minim aute fugiat minim et consectetur magna officia duis et irure. Deserunt aute adipisicing est consectetur commodo. Eu nostrud elit irure dolore fugiat ipsum qui amet amet non. Dolor laborum magna consectetur non aliqua. Reprehenderit ad occaecat commodo laborum cupidatat velit sint. Lorem aliqua proident velit Lorem et exercitation. Ex ea labore adipisicing fugiat non anim sint Lorem non sunt ullamco mollit deserunt voluptate.\r\n",
     "favoriteGym": "The Sports Center at Chelsea Piers"
   },
   {
+    "_id": "57bcde3cb932c777544a8702",
     "index": 12,
+    "guid": "de3b8127-32b8-4f36-b9c3-49c3d6bc4eba",
     "isActive": false,
-    "style": "Toprope, Lead",
+    "picture": "http://placehold.it/32x32",
     "name": "Ida Baker",
     "gender": "female",
     "about": "Cillum occaecat laboris occaecat eu esse quis exercitation consectetur. Qui irure esse qui qui Lorem. Duis voluptate incididunt non ea eiusmod magna officia pariatur cillum cupidatat ea laborum commodo proident. Reprehenderit nostrud dolore pariatur dolor elit dolore magna ad nulla eiusmod. Nulla consequat enim nisi ea commodo sit. Ullamco officia ea irure nostrud sint Lorem officia adipisicing incididunt est deserunt qui excepteur aute.\r\n",
     "favoriteGym": "The Sports Center at Chelsea Piers"
   },
   {
+    "_id": "57bcde3c595a1d0e163120d4",
     "index": 13,
+    "guid": "295ab103-23e0-4002-986d-b8928758c40e",
     "isActive": false,
-    "style": "Toprope",
+    "picture": "http://placehold.it/32x32",
     "name": "Gamble Stone",
     "gender": "male",
     "about": "Consectetur esse ullamco fugiat laboris occaecat occaecat et. Anim cillum veniam tempor qui Lorem do culpa nulla aute ullamco nostrud pariatur cillum veniam. Ad nisi culpa reprehenderit qui esse adipisicing ad nulla. Esse laborum proident magna consectetur exercitation commodo ipsum labore ullamco excepteur laboris in cupidatat. Cupidatat ad nostrud sint ea ex deserunt mollit sint sit labore. Pariatur Lorem deserunt dolor culpa.\r\n",
     "favoriteGym": "Brooklyn Boulders"
   },
   {
+    "_id": "57bcde3cd1f5f3ba76b3d56d",
     "index": 14,
+    "guid": "fe7168cc-9ff9-4f19-a1fe-63ec8e750437",
     "isActive": false,
-    "style": "Toprope, Lead, Bouldering",
+    "picture": "http://placehold.it/32x32",
     "name": "Knowles Aguirre",
     "gender": "male",
     "about": "Nisi et cillum laborum consectetur laboris esse enim nulla qui ullamco. Quis commodo incididunt amet enim dolor laborum dolor adipisicing aliquip nisi non sint. Laboris exercitation ut nostrud dolor qui veniam ut nulla. Consequat magna eiusmod cillum nulla nulla fugiat reprehenderit. Est proident ipsum incididunt ut non Lorem exercitation id proident. Culpa aliquip velit non quis quis qui aute mollit Lorem anim aliquip esse. Reprehenderit eu dolore elit cupidatat nostrud.\r\n",
     "favoriteGym": "The Cliffs LIC"
   },
   {
+    "_id": "57bcde3cff281ea6748e7937",
     "index": 15,
+    "guid": "4e1a6539-e25c-40bd-ab25-f3afd31a7264",
     "isActive": true,
-    "style": "Bouldering",
+    "picture": "http://placehold.it/32x32",
     "name": "Harding Espinoza",
     "gender": "male",
     "about": "Id labore laboris reprehenderit duis. Nisi cillum non incididunt ut cillum pariatur ex ipsum Lorem ex non dolore. Cupidatat aliquip Lorem officia id eu nulla sit aliqua est aliquip velit eu mollit cillum.\r\n",
     "favoriteGym": "The Climbing Gym at Manhattan Plaza Health Club"
   },
   {
+    "_id": "57bcde3c53abb97019ec2762",
     "index": 16,
+    "guid": "879c259c-b1c7-4ffe-ade3-2fce72fb239f",
     "isActive": false,
-    "style": "Toprope",
+    "picture": "http://placehold.it/32x32",
     "name": "Gilmore Hoffman",
     "gender": "male",
     "about": "Cillum amet cupidatat enim est dolor nisi adipisicing consectetur. Magna velit id non duis consectetur. Aliqua aliquip exercitation aliquip dolor ea eu minim deserunt eu qui deserunt. Occaecat eiusmod quis culpa deserunt dolore ipsum ex do velit ullamco excepteur. Minim sunt magna aute dolor occaecat magna fugiat nulla. Dolore eu consequat sunt sunt tempor excepteur commodo anim aliquip esse sint ad est exercitation.\r\n",
     "favoriteGym": "Brooklyn Boulders Queensbridge"
   },
   {
+    "_id": "57bcde3cf4cf142034fa5f81",
     "index": 17,
+    "guid": "c13cd83e-f1a3-4a31-b642-786595447c63",
     "isActive": true,
-    "style": "Toprope",
+    "picture": "http://placehold.it/32x32",
     "name": "Burgess Suarez",
     "gender": "male",
     "about": "Non deserunt quis esse eu ea id quis in eu consectetur fugiat non. Lorem deserunt voluptate ut eu labore esse eu sint. Qui pariatur aliqua dolore Lorem do incididunt quis velit magna pariatur cillum consequat.\r\n",
     "favoriteGym": "Steep Rock Bouldering"
   },
   {
+    "_id": "57bcde3c2deba4b195a13866",
     "index": 18,
+    "guid": "4b34fd44-289b-449c-87d6-4aa757be5af2",
     "isActive": false,
-    "style": "Toprope, Lead, Bouldering",
+    "picture": "http://placehold.it/32x32",
     "name": "Morris Hodge",
     "gender": "male",
     "about": "Minim occaecat pariatur ut in esse Lorem commodo irure anim minim. Ad labore excepteur et Lorem cillum nisi qui nisi cillum officia veniam proident. Sunt duis do mollit ut sint id in velit. Aliqua anim proident nisi nostrud nostrud dolor adipisicing ea laborum ex ipsum labore Lorem. Id nisi velit consectetur adipisicing eiusmod veniam et ex. Ex cupidatat et minim magna ex reprehenderit velit ea pariatur culpa tempor ut. Nulla commodo Lorem veniam nulla ea aliquip dolore do occaecat elit esse laboris eiusmod irure.\r\n",
     "favoriteGym": "DUMBO Boulders"
   },
   {
+    "_id": "57bcde3c8fe0a3a5548b390a",
     "index": 19,
+    "guid": "a7044f66-97c4-4997-8f6e-fc3c82779208",
     "isActive": false,
-    "style": "Toprope, Lead",
+    "picture": "http://placehold.it/32x32",
     "name": "Mai Harper",
     "gender": "female",
     "about": "Anim est dolor tempor sunt incididunt officia eu labore. Aute duis enim aliquip reprehenderit non qui consequat elit est ea incididunt culpa. Dolor anim deserunt mollit sint sit fugiat reprehenderit. Eu voluptate nulla qui dolore reprehenderit aliqua enim. Ipsum minim laboris ullamco laboris ea culpa incididunt laborum consectetur esse ad dolor. Consectetur velit consequat laboris irure. Excepteur voluptate laborum minim adipisicing nostrud tempor ex aliqua enim.\r\n",
     "favoriteGym": "DUMBO Boulders"
   },
   {
+    "_id": "57bcde3c63b5c3d94f58abed",
     "index": 20,
+    "guid": "bfb932e7-1eef-405b-a42d-29f2c9cebb84",
     "isActive": false,
-    "style": "Bouldering",
+    "picture": "http://placehold.it/32x32",
     "name": "Cantu Daniels",
     "gender": "male",
     "about": "Exercitation ipsum nostrud nisi veniam sunt adipisicing qui. Irure id laborum proident reprehenderit tempor pariatur cupidatat enim est aliqua ipsum anim commodo anim. Magna proident deserunt laboris qui incididunt dolore occaecat excepteur laborum nulla.\r\n",
     "favoriteGym": "The Sports Center at Chelsea Piers"
   }
-  ];
-
-		// document.getElementById("partners").innerHTML =
-		// partners[0].favoriteGym + "   |   " + partners[0].name;
-
-		myFunction(partners);
-		function myFunction(ppl){
-			var out = "<table>";
-			var i;
-			for(i=0; i < ppl.length; i++) {
-			out += "<tr><td>" +
-	        ppl[i].favoriteGym +
-	        "</td><td>" + " " +
-	        ppl[i].name +
-	        "</td><td>" + " " +
-	        ppl[i].style +
-	        "</td></tr>";
-	    }
-	    out += "</table>";
-
-	    document.getElementById("partners").innerHTML = out;
-	}
-
-
-  var css = {"favoriteGym":{"fontWeight":"bold","borderBottom":"1px","padding":"5px"}}
-        
-
-
-
+]

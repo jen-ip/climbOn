@@ -10,12 +10,13 @@
     <title>Climb On!</title>
 
     <!-- Bootstrap core CSS -->
+    	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+
     <link href="assets/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
     
-	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/component.css">
 
 	
@@ -45,16 +46,20 @@
 					<div class="gn-scroller">
 						<ul class="gn-menu">
 
-							<li><a href="#home" class="gn-icon gn-icon-home smoothScroll">Home</a></li>
-							<li><a href="map.html" class="gn-icon gn-icon-map smoothScroll">Map</a></li>
-							<li><a href="#portfolio" class="gn-icon gn-icon-calender smoothScroll">My Schedule</a></li>
-							<li><a href="chat.html" class="gn-icon gn-icon-chat smoothScroll">Chat</a></li>
-							<li><a href="#contact" class="gn-icon gn-icon-envelop smoothScroll">Contact</a></li>
-						</ul>
-					</div><!-- /gn-scroller -->
-				</nav>
-			</li>
-			<li><a href="map.html">Climb On!</a></li>
+	
+              <li><a href="opening.html" class="gn-icon gn-icon-calender smoothScroll">Schedules</a></li>
+              <li><a href="chat.html" class="gn-icon gn-icon-chat smoothScroll">Chats</a></li>
+              <li><a href="map.html" class="gn-icon gn-icon-map smoothScroll">Map</a></li>
+              <li><a href="#" class="gn-icon gn-icon-cog smoothScroll">Settings</a></li>
+              <li><a href="about.html" class="gn-icon gn-icon-help smoothScroll">Contact</a></li>
+
+            </ul>
+          </div><!-- /gn-scroller -->
+        </nav>
+      </li>
+
+      <li><a href="#">Climb On!</a></li>
+      <li><a href="index.html">Log Out</a></li>
 		</ul>
 	</div><!-- /container -->
 		
@@ -77,12 +82,11 @@
 	<section id="about" name="about"></section>
 	<div class="container about">
 		<div class="col-lg-6 col-lg-offset-3">
-			<h3>About Alex Webber</h3>
-			<h5>FRONT-END DEVELOPER</h5>
+			<h3>Quick Note</h3>
 			<hr>
 			<br>
-			<h4>Avid follower of technology. I help businesses create elegant solution to complex problems whilst maintaining the focus on vision & strategy.<br/>-</h4>
-			<p>For the past decade I've been crafting user-centered design experiences for the web. I specialize in responsive front-end design, HTML/CSS and web typography. Some other areas of expertise are creative direction/art direction, interface design, rapid prototyping, concepting, mobile/app design and more. Most days I work with pixels, grids, typography, colors and lines of code. Currently I work at Dell as a web designer.</p>
+			<h4>This idea came about as I joined a new climbing gym and struggled to find people to climb with.<br/></h4>
+			<p>I tried a bunch of things, sign-up sheets, meetups, etc.. however I found it difficult to find people to climb with on my time, I'm hoping that this app will create meaningful relationships and encourage people to reach out and climb together. </p>
 		</div><!-- /col-lg-6 -->
 	</div><!-- /container -->
 	
@@ -91,30 +95,21 @@
 	<section id="contact" name="contact"></section>
 	<div id="footerwrap">
 		<div class="container">
-			<div class="col-lg-5">
-				<h3>Address</h3>
-				<p>
-				Av. Greenville 987,<br/>
-				New York,<br/>
-				90873<br/>
-				United States
-				</p>
-			</div>
 			
-			<div class="col-lg-7">
-				<h3>Drop Me A Line</h3>
+			<div class="col-lg-5">
+				<h3>Questions or Comments?</h3>
 				<br>
 				<form role="form" action="contact.php" method="post" enctype="plain"> 
 				  <div class="form-group">
-				    <label for="name1">Your Name</label>
+				    <label for="name1"> Name </label>
 				    <input type="name" name="Name" class="form-control" id="name1" placeholder="Your Name">
 				  </div>
 				  <div class="form-group">
-				    <label for="email1">Email address</label>
-				    <input type="email" name="Mail" class="form-control" id="email1" placeholder="Enter email">
+				    <label for="email1"> Email </label>
+				    <input type="email" name="Mail" class="form-control" id="email1" placeholder="Enter Email">
 				  </div>
 				  <div class="form-group">
-				  	<label>Your Text</label>
+				  	<label> Text </label>
 				  	<textarea class="form-control" name="Message" rows="3"></textarea>
 				  </div>
 				  <br>

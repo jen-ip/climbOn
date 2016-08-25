@@ -98,7 +98,7 @@ a:after {
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 700px;
+	min-height: 400px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
@@ -116,12 +116,13 @@ a:after {
 	font-weight: 300;
 	font-size: 66px;
 	color: black;
-	background: rgba( 255, 255, 255, .6);
+/*	margin-top: -15px;
+*/	background: rgba( 255, 255, 255, .6);
 }
 
 #foliowrap {
 	background: url(../img/foliowrap.jpg) no-repeat center top;
-	margin-top: 30px;
+	margin-top: 20px;
 	padding-top:50px;
 	text-align:center;
 	background-attachment: relative;
